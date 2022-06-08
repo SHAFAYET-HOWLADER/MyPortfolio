@@ -1,0 +1,11 @@
+.logo h3{
+    font-family: 'Great Vibes', cursive;
+    font-weight: 700;
+    margin-left: 30px;
+}
+.nav_right .index{
+    margin-left: 30px;
+    font-size: 22px;
+    font-weight: 700;
+    font-family: 'Oxygen', sans-serif;
+}

@@ -1,0 +1,84 @@
+.banner_content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.safayet img{
+    width: 300px;
+    height: 400px;
+    background-color: #f70776;
+    border-radius: 15px;
+}
+.safayet {
+    position: relative;
+    cursor: pointer;
+}
+.safayet:hover .mySelf_icon {
+    height: 100%;
+    opacity: 1;
+    transition: all linear .5s;
+}
+.mySelf_icon a{
+   color: #f70776;
+}
+.mySelf_icon {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content:space-evenly;
+    font-size: 40px;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 100%;
+    opacity: 0;
+}
+#banner{
+    background: url(../../section_images/banner\ \(3\).jpg);
+    background-position: 'center';
+    background-size: 'cover';
+    background-repeat: 'no-repeat';
+    background-attachment: fixed;
+}
+.overly{
+    padding: 100px 0px;
+    background-color: rgba(0, 0, 0, 0.592);
+}
+.banner_left h3{
+    color: #f70776;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Oxygen', sans-serif;
+}
+.banner_left h2{
+    color: #d1d1d1;
+    font-family: 'Great Vibes', cursive;
+}
+.banner_btn button{
+    padding: 5px 15px;
+    background-color: #f70776;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Oxygen', sans-serif;
+    border-radius: 8px;
+}
+.banner_btn{
+    position: relative;
+}
+.btn_overly {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    top: 0;
+    left: 0;
+    height: 0%;
+    width: 30%;
+    opacity: 0;
+}
+.banner_btn:hover .btn_overly {
+    height: 100%;
+    opacity: 1;
+    transition: all linear .5s;
+}

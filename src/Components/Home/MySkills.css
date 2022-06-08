@@ -1,0 +1,13 @@
+#mySkills{
+    margin: 50px 0px;
+    background: url(../../section_images/banner\ \(1\).jpg);
+    background-position: 'center';
+    background-size: 'cover';
+    background-repeat: 'no-repeat';
+    object-fit: cover;
+}
+.overlySkill{
+    padding: 100px 0px;
+    background-color: rgba(0, 0, 0, 0.592);
+}
+
