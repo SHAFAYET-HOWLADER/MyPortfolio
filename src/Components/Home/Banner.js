@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { useTypewriter } from 'react-simple-typewriter';
 import { GiPencil } from 'react-icons/gi';
 import mySelf from '../../section_images/fiverr-pic-removebg.png';
@@ -7,7 +7,7 @@ import { ImLinkedin } from 'react-icons/im';
 import './Banner.css';
 const Banner = () => {
     const { text } = useTypewriter({
-        words: ['Safayet Howlader . Javascript Developer'],
+        words: [' My Name Is Safayet Howlader.'],
         loop: {},
     })
     return (
@@ -17,14 +17,26 @@ const Banner = () => {
                     <div className='banner_content'>
                         <div className='banner_left'>
                             <h3>Hello,</h3>
-                            <h3>My Name Is </h3>
+
                             <h2>{text}<GiPencil style={{
                                 marginTop: '-15px'
                             }} /> </h2>
-                            <div className='banner_btn'>
-                                <button>Read More</button>
-                                <div className='btn_overly'>
-
+                            <div>
+                                <h3>
+                                    Professional Web Designer
+                                    <br />
+                                    Aspiring Mern Stack Developer
+                                </h3>
+                                <p>
+                                    I work Both On front end and backend development.
+                                    I provide 100% client satisfaction.
+                                    Quality and satisfy Everyone can trust.
+                                </p>
+                                <div className='btn_download'>
+                                    <a target="_blank" href="https://drive.google.com/file/d/1gBiqrEGuKn0_ypJBpj6K-8rUYnmIq0Pl/view?usp=sharing" download>
+                                        Download Resume
+                                    </a>
+                                    <div className='btn_overly'></div>
                                 </div>
                             </div>
                         </div>
