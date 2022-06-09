@@ -9,6 +9,7 @@
     height: 400px;
     background-color: #f70776;
     border-radius: 15px;
+    object-fit: cover;
 }
 
 .safayet {
