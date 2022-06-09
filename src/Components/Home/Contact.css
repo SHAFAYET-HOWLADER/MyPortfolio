@@ -1,0 +1,68 @@
+#contact{
+    background: url(../../section_images/banner\ \(5\).jpg);
+    background-position: 'center';
+    background-size: 'cover';
+    background-repeat: 'no-repeat';
+    object-fit: cover;
+}
+.overlySkill{
+    padding: 100px 0px;
+    background-color: rgba(0, 0, 0, 0.592);
+}
+.contact_left img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    background-color: #f70776;
+    object-fit: cover;
+}
+.contact_left p{
+    color: #d1d1d1;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+
+}
+.contact_left h4{
+    padding-top: 10px;
+    color: #d1d1d1;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+.contact_area{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.form_area input,textarea{
+    display: block;
+    padding: 10px;
+    color: #d1d1d1;
+    width: 100%;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: 1px solid #f70776;
+    margin-bottom: 10px;
+}
+.form_area textarea{
+    margin-bottom: 10px;
+}
+.contact_left{
+    flex: 1;
+}
+.contact_right{
+    flex: 1;
+    color: #d1d1d1;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 500;
+}
+#submit{
+    background-color: #f70776;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+}

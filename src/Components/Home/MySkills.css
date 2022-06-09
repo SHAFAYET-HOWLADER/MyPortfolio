@@ -1,6 +1,5 @@
 #mySkills{
-    margin: 50px 0px;
-    background: url(../../section_images/banner\ \(1\).jpg);
+    background: url(../../section_images/banner\ \(8\).jpg);
     background-position: 'center';
     background-size: 'cover';
     background-repeat: 'no-repeat';
@@ -9,5 +8,43 @@
 .overlySkill{
     padding: 100px 0px;
     background-color: rgba(0, 0, 0, 0.592);
+}
+.skill_content{
+    text-align: center;
+}
+.skill_content h3{
+    color: #d1d1d1;
+    font-family: 'Old Standard TT', serif;
+}
+.skill_content small{
+   font-size: 16px;
+}
+.skill_content h2{
+    color: #f70776;
+    font-family: 'Great Vibes', cursive;
+    padding-bottom: 50px;
+}
+
+.skill_text button{
+    border: none;
+    padding: 30px;
+    border-radius: 15px;
+    border: 1px solid #f70776;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.592);
+    font-family: 'Oxygen', sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+    transition: all linear .5s;
+}
+.skill_text{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 20px;
+}
+
+.skill_text button:hover{
+ background-color: #f70776;
+ color: #000;
 }
 

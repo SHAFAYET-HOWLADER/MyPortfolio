@@ -1,9 +1,10 @@
-import React, { useEffect, useState } from 'react';
+
 import { useTypewriter } from 'react-simple-typewriter';
 import { GiPencil } from 'react-icons/gi';
 import mySelf from '../../section_images/fiverr-pic-removebg.png';
 import { FaFacebookSquare, FaGithubSquare } from 'react-icons/fa';
 import { ImLinkedin } from 'react-icons/im';
+import { AiOutlineDownload } from 'react-icons/ai';
 import './Banner.css';
 const Banner = () => {
     const { text } = useTypewriter({
@@ -34,7 +35,10 @@ const Banner = () => {
                                 </p>
                                 <div className='btn_download'>
                                     <a target="_blank" href="https://drive.google.com/file/d/1gBiqrEGuKn0_ypJBpj6K-8rUYnmIq0Pl/view?usp=sharing" download>
-                                        Download Resume
+                                      <AiOutlineDownload style={{
+                                          fontSize: '18px',
+                                          fontWeight: 'bold'
+                                      }}/>  Download Resume
                                     </a>
                                     <div className='btn_overly'></div>
                                 </div>

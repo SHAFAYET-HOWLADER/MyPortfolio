@@ -5,7 +5,11 @@
 }
 .nav_right .index{
     margin-left: 30px;
-    font-size: 22px;
-    font-weight: 700;
-    font-family: 'Oxygen', sans-serif;
+    color: #d1d1d1;
+    font-size: 25px;
+    font-weight: 600;
+    font-family: 'Great Vibes', cursive;
+}
+.nav_right .nav_icon{
+    color: #d1d1d1;
 }

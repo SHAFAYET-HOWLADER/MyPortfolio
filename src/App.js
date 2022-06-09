@@ -5,7 +5,6 @@ import Home from './Components/Home/Home';
 import MySkills from './Components/Home/MySkills';
 import Navigation from './Components/Home/Navigation';
 import Projects from './Components/Home/Projects';
-
 function App() {
   return (
     <div className="center_root">
