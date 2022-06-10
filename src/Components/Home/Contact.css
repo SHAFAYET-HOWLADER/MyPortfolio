@@ -45,7 +45,7 @@
     border: none;
     border-radius: 5px;
     background-color: rgba(0, 0, 0, 0.7);
-    border: 1px solid #f70776;
+    border: 1px solid #d1d1d1;
     margin-bottom: 10px;
 }
 .form_area textarea{
@@ -61,11 +61,16 @@
     font-weight: 500;
 }
 #submit{
-    background-color: #f70776;
+    background-color: #680747;
     font-family: 'Oxygen', sans-serif;
     font-size: 18px;
     font-weight: 700;
+    color: #fff;
+    transition: all linear .4s;
+}
+#submit:hover{
     color: #000;
+    background-color: #c3195d;
 }
 /*responsive*/
 @media (min-width: 992px) and (max-width: 1199px) {}

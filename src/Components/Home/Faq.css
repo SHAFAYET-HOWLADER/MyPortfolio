@@ -1,0 +1,13 @@
+
+#faq {
+    background: url(../../section_images/banner\ \(3\).jpg);
+    background-position: 'center';
+    background-size: 'cover';
+    background-repeat: 'no-repeat';
+    background-attachment: fixed;
+}
+
+.overly {
+    padding: 100px 0px;
+    background-color: rgba(0, 0, 0, 0.592);
+}

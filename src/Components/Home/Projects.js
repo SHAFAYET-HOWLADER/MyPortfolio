@@ -1,19 +1,36 @@
-import React from 'react';
 import { useTypewriter } from 'react-simple-typewriter';
 import { GiPencil } from 'react-icons/gi';
-import { FaGithubSquare } from 'react-icons/fa';
-import project_one from '../../section_images/project.png';
-import project_two from '../../section_images/project (2).png';
-import project_three from '../../section_images/project (1).png';
-import project_four from '../../section_images/doctor.png';
-import project_five from '../../section_images/penguine.png';
-import project_six from '../../section_images/aman (2).png';
+import {useNavigate} from 'react-router-dom';
+import fitness_one from '../../fitnessClub/fitness_one (1).png';
+import book_one from '../../bookLover/lover_one (4).png';
+import agri_one from '../../agriculture/culture_one (2).png';
+import doctor_one from '../../doctor/doctor (4).png';
+import aman_one from '../../anam/anam_one (2).png';
+import penguine_one from '../../penguine/peng_one (3).png';
+import pax_one from '../../pax_template/pax_one (4).png';
+import watch_one from '../../watchMart/mart_one (4).png';
 import './Projects.css'
 const Projects = () => {
+  const navigate = useNavigate()
   const { text } = useTypewriter({
     words: ['My Projects'],
     loop: {},
   })
+  const navigateToFitness = ()=>{
+     navigate('/fitness')
+  }
+  const navigateToBook = ()=>{
+     navigate('/bookLover')
+  }
+  const navigateToCulture = ()=>{
+     navigate('/culture')
+  }
+  const navigateToDoctor = ()=>{
+     navigate('/doctor')
+  }
+  const navigateToAman = ()=>{
+     navigate('/aman')
+  }
   return (
     <section id='projects'>
       <div className='overly'>
@@ -26,175 +43,73 @@ const Projects = () => {
               marginTop: '-15px'
             }} /> </h2>
           </div>
-          <div className='myProjects'>
-            <div className='project_img'>
-              <img src={project_one} alt='img' />
-              <div className='project_overly'>
-                <div className='preview_text'>
-                  <h3>Fitness Club
-                  <small> (React)</small>
-                  </h3>
-                  
-                  <a target='_blank' href='https://github.com/SHAFAYET-HOWLADER/independent_service_provider' >
-                    <span>
-                      <FaGithubSquare style={{
-                        color: '#d1d1d1',
-                        fontSize: "20px",
-                        marginTop: "-5px"
-                      }} />&nbsp;github</span>
-                  </a>
-                  &nbsp;
-                  <a href='https://handle-firebase-project.web.app/' target='_blank'>Live Site</a>
-                  &nbsp;
-                  <a href='' target='_blank'>Info</a>
-                </div>
-              </div>
-            </div>            
-            <div className='project_img'>
-              <img src={project_three} alt='img' />
-
-              <div className='project_overly'>
-                <div className='preview_text'>
-                  <h3>Warehouse
-                    <br/>
-                  <small> (React+node.Js)</small>
-                  </h3>
-                  <div>
-                    <a target='_blank' href='https://github.com/SHAFAYET-HOWLADER/warehouse_management_client_side' >
-                      <span>
-                        <FaGithubSquare style={{
-                          color: '#d1d1d1',
-                          fontSize: "20px",
-                          marginTop: "-5px"
-                        }} />&nbsp;Client Code</span>
-                    </a>
-                    <br />
-                    <br />
-                    <a target='_blank' href='https://github.com/SHAFAYET-HOWLADER/warehouse_management_server_side' >
-                      <span>
-                        <FaGithubSquare style={{
-                          color: '#d1d1d1',
-                          fontSize: "20px",
-                          marginTop: "-5px"
-                        }} />&nbsp;Server Code</span>
-                    </a>
-
-                  </div>
-                  <br />
-                  &nbsp;
-                  <a href='https://warehouseactivity-da4ea.web.app/' target='_blank'>Live Site</a>
-                  &nbsp;
-                  <a href='' target='_blank'>Info</a>
-                </div>
+          <div className='projects_area'>
+            <div className='projects_img'>
+              <img src={fitness_one} alt='img' />
+              <div className='img_overly'>
+                <h2>Fitness Club</h2>
+                <br />             
+                  <button onClick={navigateToFitness}>Details</button>
               </div>
             </div>
-            <div className='project_img'>
-              <img src={project_two} alt='img' />
-              <div className='project_overly'>
-              <div className='preview_text'>
-                  <h3>Agricultural
-                  <br/>
-                  <small> (React+node.Js)</small>
-                  </h3>
-                  <div>
-                    <a target='_blank' href='https://github.com/SHAFAYET-HOWLADER/Agricultural_Manufacturer' >
-                      <span>
-                        <FaGithubSquare style={{
-                          color: '#d1d1d1',
-                          fontSize: "20px",
-                          marginTop: "-5px"
-                        }} />&nbsp;Client Code</span>
-                    </a>
-                    <br />
-                    <br />
-                    <a target='_blank' href='https://github.com/SHAFAYET-HOWLADER/agricultural_manufacturer_server_side' >
-                      <span>
-                        <FaGithubSquare style={{
-                          color: '#d1d1d1',
-                          fontSize: "20px",
-                          marginTop: "-5px"
-                        }} />&nbsp;Server Code</span>
-                    </a>
-
-                  </div>
-                  <br />
-                  &nbsp;
-                  <a href='https://final-project-13085.web.app/' target='_blank'>Live Site</a>
-                  &nbsp;
-                  <a href='' target='_blank'>Info</a>
-                </div>
+            <div className='projects_img'>
+              <img src={book_one} alt='img' />
+              <div className='img_overly'>
+                <h2>Book Lover</h2>
+                <br />
+                <button  onClick={navigateToBook}>Details</button>
               </div>
             </div>
-            <div className='project_img'>
-              <img src={project_four} alt='img' />
-              <div className='project_overly'>
-                <div className='preview_text'>
-                  <h3>Html
-                  <small> (Jquery)</small>
-                  </h3>
-                  
-                  <a target='_blank' href='https://github.com/SHAFAYET-HOWLADER/independent_service_provider' >
-                    <span>
-                      <FaGithubSquare style={{
-                        color: '#d1d1d1',
-                        fontSize: "20px",
-                        marginTop: "-5px"
-                      }} />&nbsp;github</span>
-                  </a>
-                  &nbsp;
-                  <a href='https://handle-firebase-project.web.app/' target='_blank'>Live Site</a>
-                  &nbsp;
-                  <a href='' target='_blank'>Info</a>
-                </div>
+            <div className='projects_img'>
+              <img src={agri_one} alt='img' />
+              <div className='img_overly'>
+                <h2>Agricultural</h2>
+                <br />
+                <button  onClick={navigateToCulture}>Details</button>
               </div>
             </div>
-            <div className='project_img'>
-              <img src={project_five} alt='img' />
-              <div className='project_overly'>
-                <div className='preview_text'>
-                  <h3>penguine
-                  <small> (Simple Html)</small>
-                  </h3>
-                  
-                  <a target='_blank' href='https://github.com/SHAFAYET-HOWLADER/penguine-project' >
-                    <span>
-                      <FaGithubSquare style={{
-                        color: '#d1d1d1',
-                        fontSize: "20px",
-                        marginTop: "-5px"
-                      }} />&nbsp;github</span>
-                  </a>
-                  &nbsp;
-                  <a href='https://shafayet-howlader.github.io/penguine-project/' target='_blank'>Live Site</a>
-                  &nbsp;
-                  <a href='' target='_blank'>Info</a>
-                </div>
+            <div className='projects_img'>
+              <img src={doctor_one} alt='img' />
+              <div className='img_overly'>
+                <h2>Doctor Template</h2>
+                <br />
+                <button onClick={navigateToDoctor}>Details</button>
               </div>
             </div>
-            <div className='project_img'>
-              <img src={project_six} alt='img' />
-              <div className='project_overly'>
-                <div className='preview_text'>
-                  <h3>aman
-                  <small> (Simple Html)</small>
-                  </h3>
-                  
-                  <a target='_blank' href='https://github.com/SHAFAYET-HOWLADER/html_template' >
-                    <span>
-                      <FaGithubSquare style={{
-                        color: '#d1d1d1',
-                        fontSize: "20px",
-                        marginTop: "-5px"
-                      }} />&nbsp;github</span>
-                  </a>
-                  &nbsp;
-                  <a href='https://shafayet-howlader.github.io/html_template/' target='_blank'>Live Site</a>
-                  &nbsp;
-                  <a href='' target='_blank'>Info</a>
-                </div>
+            <div className='projects_img'>
+              <img src={aman_one} alt='img' />
+              <div className='img_overly'>
+                <h2>Aman</h2>
+                <br />
+                <button onClick={navigateToAman}>Details</button>
+              </div>
+            </div>
+            <div className='projects_img'>
+              <img src={penguine_one} alt='img' />
+              <div className='img_overly'>
+                <h2>Penguine</h2>
+                <br />
+                <button>Details</button>
+              </div>
+            </div>
+            <div className='projects_img'>
+              <img src={pax_one} alt='img' />
+              <div className='img_overly'>
+                <h2>Pax Template</h2>
+                <br />
+                <button>Details</button>
+              </div>
+            </div>
+            <div className='projects_img'>
+              <img src={watch_one} alt='img' />
+              <div className='img_overly'>
+                <h2>Watch Mart</h2>
+                <br />
+                <button>Details</button>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </section>

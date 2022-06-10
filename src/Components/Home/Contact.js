@@ -1,12 +1,12 @@
-import React, { useRef, useState } from 'react';
+import React, { useRef} from 'react';
 import { useTypewriter } from 'react-simple-typewriter';
 import { GiPencil } from 'react-icons/gi';
+import {toast } from 'react-toastify';
 import my_png from '../../section_images/fiverr-pic-removebg.png';
 import emailjs from '@emailjs/browser';
 import './Contact.css'
 const Contact = () => {
     const form = useRef();
-    const [done, setDone] = useState(false);
     const { text } = useTypewriter({
         words: ['Touch'],
         loop: {},
@@ -18,7 +18,9 @@ const Contact = () => {
         emailjs.sendForm('service_qeohbup', 'template_lj6qwdb', form.current, 'D5D1ko7NfOs4lP_9d')
         .then((result) => {
             console.log(result.text);
-            setDone(true)
+            if(result){
+                toast.success("Thanks for messaging");
+            }
         },
         event.target.reset(),
          (error) => {
@@ -59,7 +61,6 @@ const Contact = () => {
                                 <input type='email' name='user_email' placeholder='Email' required />
                                 <textarea name='user_message' placeholder='Post A Message' required />
                                 <input id='submit' type='submit' value='Send Message' />
-                                {done && "Thanks you"}
                             </form>
                         </div>
                     </div>

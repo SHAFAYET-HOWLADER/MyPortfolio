@@ -1,0 +1,120 @@
+#fitness {
+    padding: 100px 0px;
+    background-color: rgba(247, 7, 118, 0.1);
+}
+
+.fitness_area {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 50px;
+}
+
+.fitness_right {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+}
+
+.fitness_left h4 {
+    font-weight: 600;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 20px;
+}
+
+.fitness_left h5 {
+    background-color: #f70776;
+    font-weight: 600;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 18px;
+    display: inline-block;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.fitness_right img {
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.fitness_left li {
+    padding-bottom: 5px;
+    text-align: left;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    padding: 8px 0px;
+    text-transform: capitalize;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.link a {
+    background-color: #f70776;
+    font-weight: 600;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #000;
+}
+
+/*responsive*/
+@media (min-width: 992px) and (max-width: 1199px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .fitness_area {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .fitness_left li {
+        width: 100%;
+    }
+
+    .fitness_right {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fitness_right img {
+        margin: 0px auto;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .fitness_area {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .fitness_left li {
+        width: 100%;
+    }
+
+    .fitness_right {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .fitness_right img {
+        margin: 0px auto;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .fitness_area {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .fitness_left li {
+        width: 100%;
+    }
+
+    .fitness_right {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .fitness_right img {
+        margin: 0px auto;
+    }
+}
+
+/*responsive*/
