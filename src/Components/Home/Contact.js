@@ -1,20 +1,29 @@
-import React from 'react';
+import React, { useRef, useState } from 'react';
 import { useTypewriter } from 'react-simple-typewriter';
 import { GiPencil } from 'react-icons/gi';
 import my_png from '../../section_images/fiverr-pic-removebg.png';
+import emailjs from '@emailjs/browser';
 import './Contact.css'
 const Contact = () => {
+    const form = useRef();
+    const [done, setDone] = useState(false);
     const { text } = useTypewriter({
         words: ['Touch'],
         loop: {},
     })
+
     const sendMessage = (event) => {
         event.preventDefault();
-        const name = event.target.name.value;
-        const email = event.target.email.value;
-        const message = event.target.message.value;
-        event.target.reset();
-        console.log(name,email,message)
+        
+        emailjs.sendForm('service_qeohbup', 'template_lj6qwdb', form.current, 'D5D1ko7NfOs4lP_9d')
+        .then((result) => {
+            console.log(result.text);
+            setDone(true)
+        },
+        event.target.reset(),
+         (error) => {
+            console.log(error.text);
+        });
     }
     return (
         <section id='contact'>
@@ -44,11 +53,13 @@ const Contact = () => {
                             <h3>Contact With Me</h3>
                             <p>
                                 Please fill out the form on this section to contact with me. Or call between 9:00 a.m. and 8:00 p.m. ET, Monday through Friday</p>
-                            <form className='form_area' onSubmit={sendMessage}>
-                                <input type='text' name='name' placeholder='Name' required />
-                                <input type='email' name='email' placeholder='Email' required />
-                                <textarea name='message' placeholder='Post A Comment' required />
+                            <form ref={form} className='form_area' onSubmit={sendMessage}>
+                                <input type='text' name='user_name' placeholder='Name' required />
+                                <input type='text' name='user_subject' placeholder='Subject' required />
+                                <input type='email' name='user_email' placeholder='Email' required />
+                                <textarea name='user_message' placeholder='Post A Message' required />
                                 <input id='submit' type='submit' value='Send Message' />
+                                {done && "Thanks you"}
                             </form>
                         </div>
                     </div>
