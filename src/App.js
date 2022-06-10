@@ -1,5 +1,4 @@
 import { Route, Routes} from 'react-router-dom';
-import Contact from './Components/Home/Contact';
 import Faq from './Components/Home/Faq';
 import Home from './Components/Home/Home';
 import { ToastContainer} from 'react-toastify';
@@ -13,6 +12,10 @@ import BookLover from './Components/Home/BookLover';
 import Agricultural from './Components/Home/Agricultural';
 import Doctor from './Components/Home/Doctor';
 import Aman from './Components/Home/Aman';
+import Penguine from './Components/Home/Penguine';
+import Pax from './Components/Home/Pax';
+import Watch from './Components/Home/Watch';
+import Contact from './Components/Home/Contact';
 
 function App() {
   return (
@@ -31,6 +34,10 @@ function App() {
         <Route path='/culture' element={<Agricultural/>}></Route>
         <Route path='/doctor' element={<Doctor/>}></Route>
         <Route path='/aman' element={<Aman/>}></Route>
+        <Route path='/penguine' element={<Penguine/>}></Route>
+        <Route path='/pax' element={<Pax/>}></Route>
+        <Route path='/watch' element={<Watch/>}></Route>
+       
         <Route path='/contact' element={<Contact/>}></Route>
       </Routes>
       <ToastContainer />

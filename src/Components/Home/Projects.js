@@ -31,6 +31,15 @@ const Projects = () => {
   const navigateToAman = ()=>{
      navigate('/aman')
   }
+  const navigateToPeng = ()=>{
+     navigate('/penguine')
+  }
+  const navigateToPax = ()=>{
+     navigate('/pax')
+  }
+  const navigateToWatch = ()=>{
+     navigate('/watch')
+  }
   return (
     <section id='projects'>
       <div className='overly'>
@@ -89,7 +98,7 @@ const Projects = () => {
               <div className='img_overly'>
                 <h2>Penguine</h2>
                 <br />
-                <button>Details</button>
+                <button onClick={navigateToPeng}>Details</button>
               </div>
             </div>
             <div className='projects_img'>
@@ -97,7 +106,7 @@ const Projects = () => {
               <div className='img_overly'>
                 <h2>Pax Template</h2>
                 <br />
-                <button>Details</button>
+                <button onClick={navigateToPax}>Details</button>
               </div>
             </div>
             <div className='projects_img'>
@@ -105,7 +114,7 @@ const Projects = () => {
               <div className='img_overly'>
                 <h2>Watch Mart</h2>
                 <br />
-                <button>Details</button>
+                <button onClick={navigateToWatch}>Details</button>
               </div>
             </div>
           </div>

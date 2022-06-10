@@ -105,15 +105,24 @@
 /*responsive*/
 @media (min-width: 992px) and (max-width: 1199px) {}
 
-@media (min-width: 768px) and (max-width: 991.98px) {}
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .banner_content {
+        flex-direction: column;
+    }
+    .banner_left {
+        margin-bottom: 50px;
+        text-align: center;
+      }
+}
 
 @media (min-width: 576px) and (max-width: 767.98px) {
     .banner_content {
         flex-direction: column;
     }
-    .safayet img {
-      margin-top: 50px;
-    }
+    .banner_left {
+        margin-bottom: 50px;
+        text-align: center;
+      }
 }
 
 @media (max-width: 575.98px) {
@@ -122,6 +131,7 @@
     }
     .banner_left {
       margin-bottom: 50px;
+      text-align: center;
     }
 }
 
