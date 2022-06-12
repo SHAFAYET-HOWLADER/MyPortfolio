@@ -40,7 +40,7 @@
 .form_area input,textarea{
     display: block;
     padding: 10px;
-    color: #d1d1d1;
+    color: #fff;
     width: 100%;
     border: none;
     border-radius: 5px;
@@ -64,13 +64,15 @@
     background-color: #680747;
     font-family: 'Oxygen', sans-serif;
     font-size: 18px;
+    color: #000;
     font-weight: 700;
-    color: #fff;
+    background-color: #d1d1d1;
     transition: all linear .4s;
 }
 #submit:hover{
     color: #000;
     background-color: #c3195d;
+    border: 1px solid #c3195d;
 }
 /*responsive*/
 @media (min-width: 992px) and (max-width: 1199px) {}

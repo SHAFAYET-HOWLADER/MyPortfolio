@@ -16,6 +16,7 @@ import Penguine from './Components/Home/Penguine';
 import Pax from './Components/Home/Pax';
 import Watch from './Components/Home/Watch';
 import Contact from './Components/Home/Contact';
+import CopyRight from './Components/Home/CopyRight';
 
 function App() {
   return (
@@ -37,9 +38,9 @@ function App() {
         <Route path='/penguine' element={<Penguine/>}></Route>
         <Route path='/pax' element={<Pax/>}></Route>
         <Route path='/watch' element={<Watch/>}></Route>
-       
         <Route path='/contact' element={<Contact/>}></Route>
       </Routes>
+      <CopyRight/>
       <ToastContainer />
     </div>
   );

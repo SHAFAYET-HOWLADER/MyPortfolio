@@ -51,7 +51,11 @@
 
 
 /*responsive*/
-@media (min-width: 992px) and (max-width: 1199px) {}
+@media (min-width: 992px) and (max-width: 1199px) {
+    .skill_text{
+        grid-template-columns: repeat(4,1fr);
+    }
+}
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .skill_text{
@@ -68,7 +72,7 @@
 
 @media (max-width: 575.98px) {
     .skill_text{
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(1,1fr);
     }
   
 }

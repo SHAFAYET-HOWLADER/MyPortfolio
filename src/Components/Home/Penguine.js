@@ -1,9 +1,9 @@
 import React from 'react';
 import './Penguine.css';
 import peng1 from '../../penguine/peng_one (1).png';
-import peng2 from '../../penguine/peng_one (1).png';
-import peng3 from '../../penguine/peng_one (1).png';
-import peng4 from '../../penguine/peng_one (1).png';
+import peng2 from '../../penguine/peng_one (2).png';
+import peng3 from '../../penguine/peng_one (3).png';
+import peng4 from '../../penguine/peng_one (4).png';
 
 
 const Penguine = () => {
